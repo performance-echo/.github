@@ -4,7 +4,7 @@ This is Echoenergia's Performance team GitHub page. Here we have repositories fo
 
 Feel free to contribute :smiley:! All code that at some point can be reused by someone is recommended to be in here for better version control. Just be sure to document your code as well as possible (look [here](https://realpython.com/documenting-python-code/) for good guidelines on how to document python code).
 
-Please check out the [Documentation](https://github.com/performance-echo/documentation) section. A lot of useful information can be found there. :male-technologist:
+Please check out the [Documentation](https://github.com/performance-echo/documentation) section. A lot of useful information can be found there.
 
 ## Curiosity
 
