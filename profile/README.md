@@ -8,7 +8,7 @@ Please check out the [Documentation](https://github.com/performance-echo/documen
 
 ## Packages :package: 
 
-Currently we are usyng Python :snake: version 3.12, Before installing the packages make sure that's the version you have installed. To do so, run the following command.
+Currently we are usyng Python :snake: version 3.12. Before installing the packages make sure that's the version you have installed. To do so, run the following command:
 
 ```bash
 conda install python=3.12
