@@ -14,9 +14,10 @@ Currently we are usyng Python :snake: version 3.12. Before installing the packag
 conda install python=3.12
 ```
 
-You can install all echo pacakges at once using the command below. Add `--upgrade --no-deps` if you just want to upgrade existing packages, skipping dependencies.
+You can install all echo pacakges at once using the command below. Add `--upgrade` to the second line if you also want to upgrade dependencies. 
 
 ```bash
+uv pip install --force-reinstall --no-deps -r https://raw.githubusercontent.com/performance-echo/.github/main/echo_packages.txt
 uv pip install -r https://raw.githubusercontent.com/performance-echo/.github/main/echo_packages.txt
 ```
 > [!NOTE]
