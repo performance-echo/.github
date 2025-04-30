@@ -10,6 +10,5 @@ git+https://github.com/performance-echo/echo-scadasql
 git+https://github.com/performance-echo/echo-meteo
 git+https://github.com/performance-echo/echo-logger
 git+https://github.com/performance-echo/echo-cms
-git+https://github.com/performance-echo/echo-climatempo
 git+https://github.com/performance-echo/echo-datetimerange
 git+https://github.com/performance-echo/echo-errorsummary
