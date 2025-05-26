@@ -6,7 +6,7 @@ git+https://github.com/performance-echo/echo-ons
 git+https://github.com/performance-echo/echo-calcmodels
 git+https://github.com/performance-echo/echo-reports
 git+https://github.com/performance-echo/echo-energycalc
-git+https://github.com/performance-echo/echo-scadasql
+git+https://github.com/performance-echo/echo-dataimporter
 git+https://github.com/performance-echo/echo-meteo
 git+https://github.com/performance-echo/echo-logger
 git+https://github.com/performance-echo/echo-cms
