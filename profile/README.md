@@ -17,11 +17,11 @@ conda install python=3.12
 You can install all echo pacakges at once using the command below. Add `--upgrade` to the second line if you also want to upgrade dependencies. 
 
 ```bash
-uv pip install --force-reinstall --no-deps -r https://raw.githubusercontent.com/performance-echo/.github/main/echo_packages.txt
 uv pip install -r https://raw.githubusercontent.com/performance-echo/.github/main/echo_packages.txt
 ```
 > [!NOTE]
 >
 > - The command above uses uv for faster installs. If you don't have it installed, install it using `pip install uv`. After that you can always use `uv pip` for faster installs than regular `pip`.
-> - If you are having trouble with the packages, specially after a Python version upgrade, run the second line of the command above adding the flag `--force-reinstall` at the end.
+> - You can easily upgrade all dependent packages by also adding the `-U` flag at the end of the command.
+> - If you are having trouble with the packages, specially after a Python version upgrade, run the command above adding the flag `--force-reinstall` at the end.
 
