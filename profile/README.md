@@ -23,4 +23,5 @@ uv pip install -r https://raw.githubusercontent.com/performance-echo/.github/mai
 >
 > - The command above uses uv for faster installs. If you don't have it installed, install it using `pip install uv`. After that you can always use `uv pip` for faster installs than regular `pip`.
 > - If you are having trouble with the packages, specially after a Python version upgrade, run the command above adding the flag `--force-reinstall` at the end.
+> - If uv is asking you to add the `--system` flag, you can set an environment variable to make this the default behavior using commnad `setx UV_SYSTEM_PYTHON "true"` (works in PowerShell).
 
