@@ -14,7 +14,7 @@ To use our packages, you first need to set up your local environment correctly.
 
 ### Prerequisites
 
-1.  **Python 3.12**: Our standard environment is Python `:snake:` 3.12. Ensure you have it installed. We recommend using a version manager like `conda` or `pyenv`.
+1.  **Python 3.12**: Our standard environment is Python :snake: 3.12. Ensure you have it installed. We recommend using a version manager like `conda` or `pyenv`.
     ```bash
     # Example using conda
     conda install python=3.12
