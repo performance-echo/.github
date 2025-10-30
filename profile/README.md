@@ -14,17 +14,16 @@ To use our packages, you first need to set up your local environment correctly.
 
 ### Prerequisites
 
-1.  **Python 3.12**: Our standard environment is Python :snake: 3.12. Ensure you have it installed. We recommend using a version manager like `conda` or `pyenv`.
+1.  **Python** :snake:: Our standard environment is Python  3.12. Ensure you have it installed.
     ```bash
-    # Example using conda
     conda install python=3.12
     ```
 
-2.  **GitHub CLI**: The installation command requires you to be authenticated via the GitHub CLI.
+3.  **GitHub CLI**: The installation command requires you to be authenticated via the GitHub CLI.
     * **Install it**: If you don't have it, run `winget install --id GitHub.cli` on Windows or follow the [official installation guide](https://github.com/cli/cli#installation) for macOS/Linux.
     * **Authenticate**: After installation, run `gh auth login` and follow the prompts.
 
-3.  **uv Package Installer**: We use `uv` for significantly faster package installation than standard `pip`.
+4.  **uv Package Installer**: We use `uv` for significantly faster package installation than standard `pip`.
     ```bash
     # Install uv using pip
     pip install uv
