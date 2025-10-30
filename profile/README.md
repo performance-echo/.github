@@ -1,27 +1,41 @@
-# Hello Performance Team! :rocket:
+# Welcome Echoenergia Performance Team! :rocket:
 
-This is Echoenergia's Performance team GitHub page. Here we have repositories for the main codes used by the team, most of them being in the format of python packages that can easily be installed using pip.
+This is the official GitHub organization for Echoenergia's Performance team. Here, we centralize the key Python packages and tools developed and used by our team.
 
-Feel free to contribute :smiley:! All code that at some point can be reused by someone is recommended to be in here for better version control. Just be sure to document your code as well as possible (look [here](https://realpython.com/documenting-python-code/) for good guidelines on how to document python code).
+We encourage all team members to contribute! If you've written code that could be reused, this is the place for it. Please ensure your code is well-documented to help your colleagues. For great tips on documentation, see these [Python documenting guidelines](https://realpython.com/documenting-python-code/).
 
-Please check out the [Documentation](https://github.com/performance-echo/documentation) section. A lot of useful information can be found there.
+Before you start, please check out our central **[Documentation](https://github.com/performance-echo/documentation)** repository for useful information and standards.
 
-## Packages :package: 
+---
 
-Currently we are usyng Python :snake: version 3.12. Before installing the packages make sure that's the version you have installed. To do so, run the following command:
+## :gear: Getting Started: Environment Setup
+
+To use our packages, you first need to set up your local environment correctly.
+
+### Prerequisites
+
+1.  **Python 3.12**: Our standard environment is Python `:snake:` 3.12. Ensure you have it installed. We recommend using a version manager like `conda` or `pyenv`.
+    ```bash
+    # Example using conda
+    conda install python=3.12
+    ```
+
+2.  **GitHub CLI**: The installation command requires you to be authenticated via the GitHub CLI.
+    * **Install it**: If you don't have it, run `winget install --id GitHub.cli` on Windows or follow the [official installation guide](https://github.com/cli/cli#installation) for macOS/Linux.
+    * **Authenticate**: After installation, run `gh auth login` and follow the prompts.
+
+3.  **uv Package Installer**: We use `uv` for significantly faster package installation than standard `pip`.
+    ```bash
+    # Install uv using pip
+    pip install uv
+    ```
+
+### :package: Installing Team Packages
+
+Once the prerequisites are met, you can install all standard team packages with this single command. It securely downloads the package list and installs them using `uv`.
 
 ```bash
-conda install python=3.12
-```
-
-You can install all echo pacakges at once using the command below. Add `-U` flag if you also want to upgrade dependencies. 
-
-```bash
-uv pip install -r https://raw.githubusercontent.com/performance-echo/.github/main/echo_packages.txt
-```
-> [!NOTE]
->
-> - The command above uses uv for faster installs. If you don't have it installed, install it using `pip install uv`. After that you can always use `uv pip` for faster installs than regular `pip`.
-> - If you are having trouble with the packages, specially after a Python version upgrade, run the command above adding the flag `--force-reinstall` at the end.
-> - If uv is asking you to add the `--system` flag, you can set an environment variable to make this the default behavior using commnad `setx UV_SYSTEM_PYTHON "true"` (works in PowerShell).
-
+curl -sL -H "Authorization: token $(gh auth token)" \
+-H "Accept: application/vnd.github.v3.raw" \
+"[https://api.github.com/repos/performance-echo/.github/contents/echo_packages.txt?ref=main](https://api.github.com/repos/performance-echo/.github/contents/echo_packages.txt?ref=main)" \
+| uv pip install -r -
