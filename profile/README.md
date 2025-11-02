@@ -36,3 +36,7 @@ Once the prerequisites are met, you can install all standard team packages with 
 ```bash
  curl -sL -H "Authorization: token $(gh auth token)" -H "Accept: application/vnd.github.v3.raw" "https://api.github.com/repos/performance-echo/.github/contents/echo_packages.txt?ref=main" | uv pip install -r -
 ```
+
+> [!NOTE]
+>
+> If you want to update all the dependent pacakges, please add `-U` right after `uv pip install` in the command above.
