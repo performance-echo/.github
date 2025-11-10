@@ -39,4 +39,6 @@ Once the prerequisites are met, you can install all standard team packages with 
 
 > [!NOTE]
 >
-> If you want to update all the dependent pacakges, please add `-U` right after `uv pip install` in the command above.
+> - If you want to update all the dependent pacakges, please add `-U` right after `uv pip install` in the command above.
+> - If you are having trouble with the packages, specially after a Python version upgrade, run the command above adding the flag `--force-reinstall` at the end.
+> - If uv is asking you to add the `--system` flag, you can set an environment variable to make this the default behavior using commnad `setx UV_SYSTEM_PYTHON "true"` (works in PowerShell).
