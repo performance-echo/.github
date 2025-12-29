@@ -30,8 +30,8 @@ To use our packages, you first need to set up your local environment correctly.
 
 Once the prerequisites are met, you can install all standard team packages with this single command. It securely downloads the package list and installs them using `uv`.
 
-```bash
- curl -sL -H "Authorization: token $(gh auth token)" -H "Accept: application/vnd.github.v3.raw" "https://api.github.com/repos/performance-echo/.github/contents/echo_packages.txt?ref=main" | uv pip install -r -
+```shell
+gh api "repos/performance-echo/.github/contents/echo_packages.txt" -H "Accept: application/vnd.github.v3.raw" | uv pip install -r -
 ```
 
 > [!NOTE]
