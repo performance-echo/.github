@@ -4,7 +4,7 @@ This is the official GitHub organization for Echoenergia's Performance team. Her
 
 We encourage all team members to contribute! If you've written code that could be reused, this is the place for it. Please ensure your code is well-documented to help your colleagues. For great tips on documentation, see these [Python documenting guidelines](https://realpython.com/documenting-python-code/).
 
-Before you start, please check out our central **[Documentation](https://github.com/performance-echo/documentation)** repository for useful information and standards.
+Before you start, please check out our central **[Documentation](https://echoenergia.atlassian.net/wiki/spaces/P/overview)** in Confluence for useful information.
 
 ---
 
